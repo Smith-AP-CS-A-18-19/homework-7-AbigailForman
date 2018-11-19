@@ -4,6 +4,17 @@ public class Homework7 {
 	 * from 1 to x and return the result
 	 */
 	public static int problem1(int x) {
+		int a = 1;
+		int sum = 0;
+
+		while (a < x) {
+			sum += a;
+			a++;
+
+
+	}
+
+		return sum;
 
 	}
 
@@ -14,15 +25,31 @@ public class Homework7 {
 	 * use that method, you must use a loop
 	 */
 	public static int problem2(String s, String t) {
+		int i = 0;
+		while (i <= s.length() - t.length()) {
+			String sub = s.substring(i, t.length() + i);
+			if (sub.equals(t)) {
+				return i;
+			}
+			i++;
+		}
+		return -1;
+		}
 
-	}
+
+
 
 	/* Use a loop (while or for) to calculate and
 	 * return the value of a raised to the b
 	 * power
 	 */
 	public static int problem3(int a, int b) {
+		int d = 1;
+		for (int i = 0; i < b; i++) {
+			 d = d * a;
 
+		}
+		return d;
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -30,7 +57,12 @@ public class Homework7 {
 	 * b (i.e., calculate a / b using a loop)
 	 */
 	public static int problem4(int a, int b) {
-
+		int answer = 0;
+		while (a > b) {
+			a = a - b;
+			answer++;
+		}
+		return answer;
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -38,7 +70,12 @@ public class Homework7 {
 	 * (i.e., calculate a % b using a loop)
 	 */
 	 public static int problem5(int a, int b) {
-
+		 int x = 0;
+		 while (b > 0) {
+			 int d = a % b;
+			 x = d;
+		 }
+		 return x/b;
 	 }
 
 	public static void main(String[] args) {
