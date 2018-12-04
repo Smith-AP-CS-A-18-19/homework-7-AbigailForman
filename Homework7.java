@@ -69,12 +69,14 @@ public class Homework7 {
 	 * return the remainder of a divided by b
 	 * (i.e., calculate a % b using a loop)
 	 */
+	 /* You can't use mod to calculate mod!
+	  */
 	 public static int problem5(int a, int b) {
 		 int x = 0;
-		 while (b > 0) {
-			 int d = a % b;
-			 x = d;
-		 }
+		 // while (b > 0) {
+			//  int d = a % b;
+			//  x = d;
+		 // }
 		 return x/b;
 	 }
 
